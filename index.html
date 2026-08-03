@@ -3,118 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flood Detection System</title>
+    <title>FloodGuard IoT</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
 <header>
-    <h1>🌊 Flood Detection System</h1>
-    <p>Early Warning Saves Lives</p>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-water"></i>
+
+            <div class="logo-text">
+
+                <h2>FloodGuard IoT</h2>
+                <span>Smart Flood Detection System</span>
+
+            </div>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Live Monitoring</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+        <button class="login-btn">
+            Login
+        </button>
+
+        <div class="menu-btn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </nav>
+
 </header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#sensors">Sensors</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section class="hero">
-    <h2>Monitor Water Levels in Real-Time</h2>
-    <p>
-        Flood Detection Systems help communities stay safe by monitoring
-        water levels and providing early flood warnings.
-    </p>
-    <button onclick="showMessage()">Check System Status</button>
-</section>
-
-<section id="about" class="card">
-    <h2>About Flood Detection</h2>
-
-    <p>
-        Flood detection systems use sensors to monitor water levels,
-        rainfall, and river flow. When water exceeds safe limits,
-        an alert is generated to notify authorities and residents.
-    </p>
-</section>
-
-<section id="features" class="card">
-
-<h2>Features</h2>
-
-<div class="grid">
-
-<div class="box">
-<h3>💧 Water Level Monitoring</h3>
-<p>Continuously measures water levels.</p>
-</div>
-
-<div class="box">
-<h3>📡 IoT Connectivity</h3>
-<p>Transmits sensor data to the cloud.</p>
-</div>
-
-<div class="box">
-<h3>🚨 Early Warning</h3>
-<p>Sends alerts before flooding occurs.</p>
-</div>
-
-<div class="box">
-<h3>📱 Mobile Monitoring</h3>
-<p>View live data from anywhere.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="sensors" class="card">
-
-<h2>Common Sensors Used</h2>
-
-<ul>
-<li>Ultrasonic Water Level Sensor</li>
-<li>Rain Sensor</li>
-<li>Flow Sensor</li>
-<li>Temperature Sensor</li>
-<li>Humidity Sensor</li>
-<li>ESP32 / Arduino Controller</li>
-</ul>
-
-</section>
-
-<section class="card">
-
-<h2>Live Water Level</h2>
-
-<div class="meter">
-<div id="water"></div>
-</div>
-
-<p id="levelText">Current Level : 40%</p>
-
-<button onclick="increaseWater()">
-Increase Water Level
-</button>
-
-</section>
-
-<section id="contact" class="card">
-
-<h2>Contact</h2>
-
-<p>Email : floodsystem@example.com</p>
-
-<p>Phone : +91 9876543210</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 Flood Detection System</p>
-
-</footer>
 
 <script src="script.js"></script>
 
